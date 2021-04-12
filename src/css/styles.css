@@ -1,0 +1,16 @@
+:root {
+   --color-one: #000000;
+   --color-two: #5928E5;
+   --color-three: #FED9DA;
+   --color-four: #FFFFFF;
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+}
