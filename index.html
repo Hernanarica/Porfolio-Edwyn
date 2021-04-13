@@ -3,13 +3,92 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Exo:wght@700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="src/css/normalize.css"/>
 		<link rel="stylesheet" href="src/css/styles.css"/>
 		<title>Porfolio Edwin</title>
 	</head>
 	<body>
-		<header></header>
-		<main></main>
-		<footer></footer>
+		<header class="wrapper">
+			<div class="wrapper__content">
+				<div class="navbar">
+					<div class="navbar__icons">
+						<div class="navbar__icon-hamburger">
+							<img src="src/img/header__menu-icon.svg" alt="hamburger menu">
+						</div>
+						<h1 class="navbar__logo">
+							<img src="src/img/navbar__logo-image.svg" alt="Logo de Edwyn" class="navbar__logo-image">
+						</h1>
+					</div>
+					<div class="navbar__overlay"></div>
+					<nav class="navbar__menu">
+						<div class="navbar__menu-logo">
+							<img src="src/img/navbar__logo-image.svg" alt="Logo de Edwyn" class="navbar__logo-image">
+						</div>
+						<ul class="navbar__menu-container">
+							<li class="navbar__menu-item">
+								<a href="#" class="navbar__menu-link">Hola</a>
+							</li>
+							<li class="navbar__menu-item">
+								<a href="#" class="navbar__menu-link">Proyectos</a>
+							</li>
+							<li class="navbar__menu-item">
+								<a href="#" class="navbar__menu-link">Testimonios</a>
+							</li>
+							<li class="navbar__menu-item">
+								<a href="#" class="navbar__menu-link">Contacto</a>
+							</li>
+						</ul>
+					</nav>
+					<a href="#" download="Porfolio-Edwyn" class="navbar__btn">Curriculum</a>
+				</div>
+			</div>
+		</header>
+		<main class="wrapper">
+			<div class="wrapper__content">
+				<div class="hero">
+					<div class="hero__me">
+						<div class="hero__me-image">
+							<picture>
+								<source media="(min-width: 768px)" srcset="src/img/hero__image-edwyn-desktop.png"/>
+								<img src="src/img/hero__image-edwyn-mob.png" alt="Imagen de Edwyn Cortez">
+							</picture>
+						</div>
+						<h2 class="hero__me-title">¡Hola a todos!
+							<br>
+							soy Edwyn cortez
+						</h2>
+						<p class="hero__me-text">Devloper que le encanta implementar diseños que inspiran y atraen a las personas.</p>
+					</div>
+					<div class="hero__skills">
+						<div class="hero__skill">
+							<div class="hero__skill-image">
+								<img src="src/img/icon-github.svg" alt="Logo de Github">
+							</div>
+							<p class="hero__skill-text">Implementaciones de la más alta calidad.</p>
+						</div>
+						<div class="hero__skill">
+							<div class="hero__skill-image">
+								<img src="src/img/icon-figma.svg" alt="Loco de Figma">
+							</div>
+							<p class="hero__skill-text">Diseños pixel perfect creados en la mejor herramienta de diseño.</p>
+						</div>
+						<div class="hero__skill">
+							<div class="hero__skill-image">
+								<img src="src/img/icon-react.svg" alt="Logo de React">
+							</div>
+							<p class="hero__skill-text">React desde 0, sin dependencias y usando solo el lenguaje JavaScript.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<main class="wrapper">
+				<div class="wrapper__content"></div>
+			</main>
+		</footer>
+		<script src="src/js/index.js"></script>
 	</body>
 </html>
