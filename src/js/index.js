@@ -1,3 +1,9 @@
+// let queryState = window.matchMedia("(min-width: 1024px)");
+//
+// if (queryState.matches) {
+// 	console.log('si');
+// }
+
 //   :::::: Variables
 const $menu          = document.querySelector('.navbar__menu');
 const $navBarOverlay = document.querySelector('.navbar__overlay');
