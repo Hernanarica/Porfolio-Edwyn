@@ -263,6 +263,7 @@ body {
    position: absolute;
    top: 0;
    right: 0;
+   font-size: 0;
 }
 
 .project-niko__title {
@@ -324,6 +325,7 @@ body {
    position: absolute;
    top: 0;
    right: 0;
+   font-size: 0;
 }
 
 .project-marvol__title {
@@ -385,6 +387,7 @@ body {
    position: absolute;
    top: 0;
    right: 0;
+   font-size: 0;
 }
 
 .project-spotifu__title {
@@ -432,6 +435,109 @@ body {
 
    .hero__skills .hero__skill:nth-of-type(2) {
       margin-right: 0;
+   }
+}
+
+@media screen and (min-width: 1260px) {
+   /* Project */
+   .projects__navbar {
+      margin-bottom: 12.5rem;
+   }
+
+   .projects__title {
+      font-size: 6.25rem;
+   }
+
+   .projects {
+      padding-top: 5rem;
+   }
+
+   .project-niko__image {
+      width: 350px;
+   }
+
+   .project-niko {
+      max-inline-size: 648px;
+      block-size: auto;
+      margin: 0 auto 18.375rem;
+   }
+
+   .project-niko__image {
+      top: -94px;
+      left: -304px;
+   }
+
+   .project-niko__description {
+      max-inline-size: inherit;
+      padding: 4rem 1.5rem 4rem 4.375rem;
+   }
+
+   .button {
+      display: flex;
+      block-size: 48px;
+   }
+
+   .button__fill,
+   .button__outline {
+      padding: 0.75rem 1.5rem;
+   }
+
+   .button__outline {
+      margin: 0 1rem 0 0;
+   }
+
+   .project-marvol__image {
+      width: 350px;
+   }
+
+   .project-marvol {
+      max-inline-size: 648px;
+      block-size: auto;
+      margin: 0 auto 18.375rem;
+   }
+
+   .project-marvol__image {
+      top: -94px;
+      right: -304px;
+   }
+
+   .project-marvol__description {
+      max-inline-size: inherit;
+      padding: 4rem 4.375rem 4rem 1.5rem;
+   }
+
+   .button-marvol {
+      display: flex;
+      block-size: 48px;
+   }
+
+   .button-marvol__fill,
+   .button-marvol__outline {
+      padding: 0.75rem 1.5rem;
+   }
+
+   .button-marvol__outline {
+      margin: 0 1rem 0 0;
+   }
+
+   .project-spotifu__image {
+      width: 350px;
+   }
+
+   .project-spotifu {
+      max-inline-size: 648px;
+      block-size: auto;
+      margin: 0 auto 18.375rem;
+   }
+
+   .project-spotifu__image {
+      top: -94px;
+      left: -304px;
+   }
+
+   .project-spotifu__description {
+      max-inline-size: inherit;
+      padding: 4rem 1.5rem 4rem 4.375rem;
    }
 }
 
@@ -506,6 +612,25 @@ body {
 
    .hero__skill {
       margin-bottom: 0;
+   }
+}
+
+@media screen and (min-width: 1352px) {
+   /* Navbar */
+   .navbar {
+      padding: 0;
+   }
+
+   .hero__me {
+      padding: 2.313rem 0 0 0;
+   }
+
+   .hero__skills {
+      padding: 0 0 8rem 0;
+   }
+
+   .projects {
+      padding: 5rem 0 0 0;
    }
 }
 

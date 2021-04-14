@@ -38,11 +38,9 @@ $navBarOverlay.addEventListener('click', () => {
 
 
 if (querystate.matches) {
-	console.log('quitar');
 
 	const $links = document.querySelectorAll('.navbar__menu-link');
 	for (const $link of $links) {
-		console.log($link);
 		$link.addEventListener('click', () => {
 			$navBarOverlay.classList.replace('fade-in', 'fade-out');
 			setTimeout(() => {
