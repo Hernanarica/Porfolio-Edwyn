@@ -28,10 +28,10 @@
 						</div>
 						<ul class="navbar__menu-container">
 							<li class="navbar__menu-item">
-								<a href="#" class="navbar__menu-link">Hola</a>
+								<a href="#hola" class="navbar__menu-link">Hola</a>
 							</li>
 							<li class="navbar__menu-item">
-								<a href="#" class="navbar__menu-link">Proyectos</a>
+								<a href="#proyectos" class="navbar__menu-link">Proyectos</a>
 							</li>
 							<li class="navbar__menu-item">
 								<a href="#" class="navbar__menu-link">Testimonios</a>
@@ -41,12 +41,15 @@
 							</li>
 						</ul>
 					</nav>
-					<a href="#" download="Porfolio-Edwyn" class="navbar__btn"><span>Descargar</span> Curriculum</a>
+					<a href="#" download="Porfolio-Edwyn" class="navbar__btn">
+						<span>Descargar</span>
+						Curriculum
+					</a>
 				</div>
 			</div>
 		</header>
 		<main class="wrapper">
-			<div class="wrapper__content-hero">
+			<section id="hola" class="wrapper__content-hero">
 				<div class="hero">
 					<div class="hero__me">
 						<div class="hero__me-image">
@@ -85,7 +88,77 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
+			<section id="proyectos" class="wrapper__content-projects">
+				<div class="projects">
+					<h2 class="projects__title">Proyectos</h2>
+					<nav class="projects__navbar">
+						<ul class="project__navbar-container">
+							<li class="project__navbar-item">
+								<a href="#niko" class="project__navbar-link">Niko</a>
+							</li>
+							<li class="project__navbar-item">
+								<a href="#marvol" class="project__navbar-link">Marvol</a>
+							</li>
+							<li class="project__navbar-item">
+								<a href="#spotifu" class="project__navbar-link">Spotifu</a>
+							</li>
+						</ul>
+					</nav>
+					<div id="niko" class="project-niko">
+						<div class="project-niko__image">
+							<picture>
+								<source media="(min-width: 768px)" srcset="src/img/project__image-niko-desktop.jpg"/>
+								<img src="src/img/project__image-niko-mob.jpg" alt="project niko image">
+							</picture>
+						</div>
+						<div class="project-niko__description">
+							<h3 class="project-niko__title">Niko</h3>
+							<p class="project-niko__text">Niko es una de las marcas y proveedores de equipamiento deportivo más reconocidas y valiosas en todo el mundo. Por ello este
+								proyecto es dedicado a crear la interfaz de la pagina oficial de Niko, donde tenemos uno de los calzados más...
+							</p>
+							<div class="button">
+								<a href="#" class="button__outline">Ver código</a>
+								<a href="#" class="button__fill">Ver proyecto</a>
+							</div>
+						</div>
+					</div>
+					<div id="marvol" class="project-marvol">
+						<div class="project-marvol__image">
+							<picture>
+								<source media="(min-width: 768px)" srcset="src/img/project__image-marvol-desktop.jpg"/>
+								<img src="src/img/project__image-marvol-mob.jpg" alt="project marvol image">
+							</picture>
+						</div>
+						<div class="project-marvol__description">
+							<h3 class="project-marvol__title">Marvol</h3>
+							<p class="project-marvol__text">En este proyecto, podrás encontrar distintos componentes y secciones de interés para todos los fanáticos de Marvol.</p>
+							<div class="button-marvol">
+								<a href="#" class="button-marvol__outline">Ver código</a>
+								<a href="#" class="button-marvol__fill">Ver proyecto</a>
+							</div>
+						</div>
+					</div>
+					<div id="spotifu" class="project-spotifu">
+						<div class="project-spotifu__image">
+							<picture>
+								<source media="(min-width: 768px)" srcset="src/img/project__image-spotifu-desktop.jpg"/>
+								<img src="src/img/project__image-spotifu-mob.jpg" alt="project niko image">
+							</picture>
+						</div>
+						<div class="project-spotifu__description">
+							<h3 class="project-spotifu__title">Spotifu</h3>
+							<p class="project-spotifu__text">Con este proyecto podrás desafiar tus habilidades como desarrollador Frontend, maquetando la interfaz de Spotifu, una de las
+								apps más famosas de la industria musical.
+							</p>
+							<div class="button">
+								<a href="#" class="button__outline">Ver código</a>
+								<a href="#" class="button__fill">Ver proyecto</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer>
 			<main class="wrapper">

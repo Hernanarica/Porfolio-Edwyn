@@ -1,13 +1,8 @@
-// let queryState = window.matchMedia("(min-width: 1024px)");
-//
-// if (queryState.matches) {
-// 	console.log('si');
-// }
-
 //   :::::: Variables
 const $menu          = document.querySelector('.navbar__menu');
 const $navBarOverlay = document.querySelector('.navbar__overlay');
 const $iconHamburger = document.querySelector('.navbar__icon-hamburger img');
+let querystate       = window.matchMedia('(max-width: 1024px)');
 
 $iconHamburger.addEventListener('click', () => {
 	if ($menu.classList.contains('exit-for-left') && $navBarOverlay.classList.contains('fade-out')) {
@@ -40,3 +35,25 @@ $navBarOverlay.addEventListener('click', () => {
 		$menu.style.display = 'none';
 	}, 750);
 });
+
+
+if (querystate.matches) {
+	console.log('quitar');
+
+	const $links = document.querySelectorAll('.navbar__menu-link');
+	for (const $link of $links) {
+		console.log($link);
+		$link.addEventListener('click', () => {
+			$navBarOverlay.classList.replace('fade-in', 'fade-out');
+			setTimeout(() => {
+				$navBarOverlay.style.display = 'none';
+			}, 300);
+
+
+			$menu.classList.replace('enter-for-right', 'exit-for-left');
+			setTimeout(() => {
+				$menu.style.display = 'none';
+			}, 750);
+		});
+	}
+}

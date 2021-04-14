@@ -11,6 +11,7 @@
    box-sizing: border-box;
    -webkit-touch-callout: none;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -141,6 +142,7 @@ body {
 }
 
 .hero {
+   /*display: none;*/
    max-inline-size: 1336px;
    margin: 0 auto;
 }
@@ -193,8 +195,224 @@ body {
    font-weight: 700;
 }
 
-
 /* -------- (Hero) -------- */
+
+
+/* -------- Projects -------- */
+
+.projects {
+   max-width: 1336px;
+   margin: 0 auto;
+   padding: 2.5rem 1rem 0;
+}
+
+.projects__title {
+   margin: 0 0 1.5rem 0;
+   color: var(--color-two);
+   font-family: 'Exo';
+   font-size: 2rem;
+   text-align: center;
+}
+
+.projects__navbar {
+   block-size: 48px;
+   max-inline-size: 354px;
+   margin: 0 auto 4rem auto;
+}
+
+.project__navbar-container {
+   display: flex;
+   block-size: inherit;
+   margin: 0;
+   padding: 0;
+}
+
+.project__navbar-item {
+   flex: 1;
+   block-size: inherit;
+   list-style: none;
+   text-align: center;
+}
+
+.project__navbar-link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   block-size: inherit;
+   color: var(--color-two);
+   font-family: 'Cantarell';
+   font-weight: 700;
+   text-decoration: none;
+   transition: 350ms;
+}
+
+.project__navbar-link:hover {
+   background-color: var(--color-three);
+}
+
+.project-niko {
+   position: relative;
+   display: flex;
+   align-items: flex-end;
+   max-inline-size: 328px;
+   block-size: 770px;
+   margin: 0 auto 6rem;
+}
+
+.project-niko__image {
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+.project-niko__title {
+   margin: 0;
+   color: var(--color-two);
+   font-family: 'Exo';
+   font-size: 2rem;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.project-niko__description {
+   max-inline-size: 312px;
+   padding: 4rem 1.5rem;
+   background-color: var(--color-three);
+   box-shadow: 16px 16px 0 var(--color-two);
+}
+
+.project-niko__text {
+   margin: 1rem 0;
+   color: var(--color-one);
+   font-family: 'Cantarell';
+   font-size: 1.125rem;
+   line-height: 27px;
+}
+
+.button__fill,
+.button__outline {
+   display: block;
+   padding: 0.75rem 0;
+   font-family: 'Cantarell';
+   font-size: 1rem;
+   text-decoration: none;
+   text-align: center;
+   font-weight: 700;
+}
+
+.button__outline {
+   margin-bottom: 1rem;
+   color: var(--color-two);
+   border: 1px solid var(--color-two);
+}
+
+.button__fill {
+   background-color: var(--color-two);
+   color: var(--color-four);
+}
+
+.project-marvol {
+   position: relative;
+   display: flex;
+   align-items: flex-end;
+   max-inline-size: 328px;
+   block-size: 697px;
+   margin: 0 auto 6rem;
+}
+
+.project-marvol__image {
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+.project-marvol__title {
+   margin: 0;
+   color: var(--color-four);
+   font-family: 'Exo';
+   font-size: 2rem;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.project-marvol__description {
+   max-inline-size: 312px;
+   padding: 4rem 1.5rem;
+   background-color: var(--color-two);
+   box-shadow: 16px 16px 0 var(--color-three);
+}
+
+.project-marvol__text {
+   margin: 1rem 0;
+   color: var(--color-four);
+   font-family: 'Cantarell';
+   font-size: 1.125rem;
+   line-height: 27px;
+}
+
+.button-marvol__fill,
+.button-marvol__outline {
+   display: block;
+   padding: 0.75rem 0;
+   font-family: 'Cantarell';
+   font-size: 1rem;
+   text-decoration: none;
+   text-align: center;
+   font-weight: 700;
+}
+
+.button-marvol__outline {
+   margin-bottom: 1rem;
+   color: var(--color-three);
+   border: 1px solid var(--color-three);
+}
+
+.button-marvol__fill {
+   background-color: var(--color-three);
+   color: var(--color-two);
+}
+
+.project-spotifu {
+   position: relative;
+   display: flex;
+   align-items: flex-end;
+   max-inline-size: 328px;
+   block-size: 724px;
+   margin: 0 auto 6rem;
+}
+
+.project-spotifu__image {
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+.project-spotifu__title {
+   margin: 0;
+   color: var(--color-two);
+   font-family: 'Exo';
+   font-size: 2rem;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.project-spotifu__description {
+   max-inline-size: 312px;
+   padding: 4rem 1.5rem;
+   background-color: var(--color-three);
+   box-shadow: 16px 16px 0 var(--color-two);
+}
+
+.project-spotifu__text {
+   margin: 1rem 0;
+   color: var(--color-one);
+   font-family: 'Cantarell';
+   font-size: 1.125rem;
+   line-height: 27px;
+}
+
+
+/* -------- (Projects) -------- */
 
 
 /* -------- Media -------- */
@@ -282,16 +500,12 @@ body {
 
 @media screen and (min-width: 1064px) {
    /* Hero */
+   .hero__skills {
+      justify-content: space-between;
+   }
+
    .hero__skill {
       margin-bottom: 0;
-   }
-
-   .hero__skills .hero__skill:nth-of-type(2) {
-      margin-right: 1.5rem;
-   }
-
-   .hero__skills .hero__skill:nth-of-type(3) {
-      margin: 0;
    }
 }
 
