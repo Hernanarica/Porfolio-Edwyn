@@ -250,7 +250,11 @@ body {
    background-color: var(--color-three);
 }
 
-.project-niko {
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.project-niko,
+.project-spotifu,
+.project-marvol {
    position: relative;
    display: flex;
    align-items: flex-end;
@@ -259,14 +263,18 @@ body {
    margin: 0 auto 6rem;
 }
 
-.project-niko__image {
+.project-niko__image,
+.project-spotifu__image,
+.project-marvol__image {
    position: absolute;
    top: 0;
    right: 0;
    font-size: 0;
 }
 
-.project-niko__title {
+.project-niko__title,
+.project-spotifu__title,
+.project-marvol__title {
    margin: 0;
    color: var(--color-two);
    font-family: 'Exo';
@@ -275,14 +283,18 @@ body {
    text-transform: uppercase;
 }
 
-.project-niko__description {
+.project-niko__description,
+.project-spotifu__description,
+.project-marvol__description {
    max-inline-size: 312px;
    padding: 4rem 1.5rem;
    background-color: var(--color-three);
    box-shadow: 16px 16px 0 var(--color-two);
 }
 
-.project-niko__text {
+.project-niko__text,
+.project-spotifu__text,
+.project-marvol__text {
    margin: 1rem 0;
    color: var(--color-one);
    font-family: 'Cantarell';
@@ -291,67 +303,7 @@ body {
 }
 
 .button__fill,
-.button__outline {
-   display: block;
-   padding: 0.75rem 0;
-   font-family: 'Cantarell';
-   font-size: 1rem;
-   text-decoration: none;
-   text-align: center;
-   font-weight: 700;
-}
-
-.button__outline {
-   margin-bottom: 1rem;
-   color: var(--color-two);
-   border: 1px solid var(--color-two);
-}
-
-.button__fill {
-   background-color: var(--color-two);
-   color: var(--color-four);
-}
-
-.project-marvol {
-   position: relative;
-   display: flex;
-   align-items: flex-end;
-   max-inline-size: 328px;
-   block-size: 697px;
-   margin: 0 auto 6rem;
-}
-
-.project-marvol__image {
-   position: absolute;
-   top: 0;
-   right: 0;
-   font-size: 0;
-}
-
-.project-marvol__title {
-   margin: 0;
-   color: var(--color-four);
-   font-family: 'Exo';
-   font-size: 2rem;
-   font-weight: 700;
-   text-transform: uppercase;
-}
-
-.project-marvol__description {
-   max-inline-size: 312px;
-   padding: 4rem 1.5rem;
-   background-color: var(--color-two);
-   box-shadow: 16px 16px 0 var(--color-three);
-}
-
-.project-marvol__text {
-   margin: 1rem 0;
-   color: var(--color-four);
-   font-family: 'Cantarell';
-   font-size: 1.125rem;
-   line-height: 27px;
-}
-
+.button__outline,
 .button-marvol__fill,
 .button-marvol__outline {
    display: block;
@@ -363,8 +315,37 @@ body {
    font-weight: 700;
 }
 
+.button__outline,
 .button-marvol__outline {
    margin-bottom: 1rem;
+   color: var(--color-two);
+   border: 1px solid var(--color-two);
+}
+
+.button__fill {
+   background-color: var(--color-two);
+   color: var(--color-four);
+}
+
+.project-marvol {
+   block-size: 670px;
+}
+
+.project-marvol__title {
+   color: var(--color-four);
+}
+
+.project-marvol__description {
+   background-color: var(--color-two);
+   box-shadow: 16px 16px 0 var(--color-three);
+}
+
+.project-marvol__text {
+   font-family: 'Cantarell';
+   color: var(--color-four);
+}
+
+.button-marvol__outline {
    color: var(--color-three);
    border: 1px solid var(--color-three);
 }
@@ -375,44 +356,10 @@ body {
 }
 
 .project-spotifu {
-   position: relative;
-   display: flex;
-   align-items: flex-end;
-   max-inline-size: 328px;
    block-size: 724px;
-   margin: 0 auto 6rem;
 }
 
-.project-spotifu__image {
-   position: absolute;
-   top: 0;
-   right: 0;
-   font-size: 0;
-}
-
-.project-spotifu__title {
-   margin: 0;
-   color: var(--color-two);
-   font-family: 'Exo';
-   font-size: 2rem;
-   font-weight: 700;
-   text-transform: uppercase;
-}
-
-.project-spotifu__description {
-   max-inline-size: 312px;
-   padding: 4rem 1.5rem;
-   background-color: var(--color-three);
-   box-shadow: 16px 16px 0 var(--color-two);
-}
-
-.project-spotifu__text {
-   margin: 1rem 0;
-   color: var(--color-one);
-   font-family: 'Cantarell';
-   font-size: 1.125rem;
-   line-height: 27px;
-}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 /* -------- (Projects) -------- */
