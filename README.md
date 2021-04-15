@@ -16,7 +16,7 @@ class Me {
 }
 
 class Skills {
-  languages  = ['css', 'html'];
+  languages  = ['css', 'html', 'js'];
 }
 ```
 
