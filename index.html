@@ -34,10 +34,10 @@
 								<a href="#proyectos" class="navbar__menu-link">Proyectos</a>
 							</li>
 							<li class="navbar__menu-item">
-								<a href="#" class="navbar__menu-link">Testimonios</a>
+								<a href="#testimonios" class="navbar__menu-link">Testimonios</a>
 							</li>
 							<li class="navbar__menu-item">
-								<a href="#" class="navbar__menu-link">Contacto</a>
+								<a href="#contacto" class="navbar__menu-link">Contacto</a>
 							</li>
 						</ul>
 					</nav>
@@ -118,8 +118,8 @@
 								proyecto es dedicado a crear la interfaz de la pagina oficial de Niko, donde tenemos uno de los calzados más...
 							</p>
 							<div class="button">
-								<a href="#" class="button__outline">Ver código</a>
-								<a href="#" class="button__fill">Ver proyecto</a>
+								<a href="#" target="_blank" class="button__outline">Ver código</a>
+								<a href="#" target="_blank" class="button__fill">Ver proyecto</a>
 							</div>
 						</div>
 					</div>
@@ -134,8 +134,8 @@
 							<h3 class="project-marvol__title">Marvol</h3>
 							<p class="project-marvol__text">En este proyecto, podrás encontrar distintos componentes y secciones de interés para todos los fanáticos de Marvol.</p>
 							<div class="button-marvol">
-								<a href="#" class="button-marvol__outline">Ver código</a>
-								<a href="#" class="button-marvol__fill">Ver proyecto</a>
+								<a href="#" target="_blank" class="button-marvol__outline">Ver código</a>
+								<a href="#" target="_blank" class="button-marvol__fill">Ver proyecto</a>
 							</div>
 						</div>
 					</div>
@@ -152,18 +152,132 @@
 								apps más famosas de la industria musical.
 							</p>
 							<div class="button">
-								<a href="#" class="button__outline">Ver código</a>
-								<a href="#" class="button__fill">Ver proyecto</a>
+								<a href="#" target="_blank" class="button__outline">Ver código</a>
+								<a href="#" target="_blank" class="button__fill">Ver proyecto</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<section id="testimonios" class="testimonials">
+				<h2 class="testimonials__title">Testimonios</h2>
+				<div class="testimonials__users">
+					<div class="testimonials__agustin">
+						<div class="testimonials__image-agustin">
+							<picture>
+								<source media="(min-width: 640px)" srcset="src/img/testimonials__image-agustin-desktop.jpg"/>
+								<img src="src/img/testimonials__image-agustin-mob.jpg" alt="agustin image">
+							</picture>
+						</div>
+						<h2 class="testimonials__agustin-title">Agustin</h2>
+						<p class="testimonials__agustin-text">Tengo algunos años trabajando con Javascript y aún así aprendí varias cosas importantes de Edwyn y como utiliza Javascript
+							en el día a día.
+						</p>
+					</div>
+					<div class="testimonials__aritz">
+						<div class="testimonials__image-aritz">
+							<picture>
+								<source media="(min-width: 640px)" srcset="src/img/testimonials__image-aritz-desktop.jpg"/>
+								<img src="src/img/testimonials__image-aritz-mob.jpg" alt="aritza image">
+							</picture>
+						</div>
+						<h2 class="testimonials__aritz-title">Aritz</h2>
+						<p class="testimonials__aritz-text">Me gusto ver el porqué de las cosas del core de React, saber la magia que ocurre por detrás, excelente profesor Edwyn gran
+							vocación.
+						</p>
+					</div>
+					<div class="testimonials__jose">
+						<div class="testimonials__image-jose">
+							<picture>
+								<source media="(min-width: 640px)" srcset="src/img/testimonials__image-jose-desktop.jpg"/>
+								<img src="src/img/testimonials__image-jose-mob.jpg" alt="jose image">
+							</picture>
+						</div>
+						<h2 class="testimonials__jose-title">jose Enrique</h2>
+						<p class="testimonials__jose-text">La forma como explica y trabaja los temas Edwyn, me ha ayudado a comprender y sacarle el mayor provecho a HTML y CSS.</p>
+					</div>
+					<div class="testimonials__victoriano">
+						<div class="testimonials__image-victoriano">
+							<picture>
+								<source media="(min-width: 640px)" srcset="src/img/testimonials__image-victoriano-desktop.jpg"/>
+								<img src="src/img/testimonials__image-victoriano-mob.jpg" alt="Victoriano image">
+							</picture>
+						</div>
+						<h2 class="testimonials__victoriano-title">Victoriano</h2>
+						<p class="testimonials__victoriano-text">Ayuda a entender el porqué de las cosas, lo cual nos da el poder de aprovechar mejor el lenguaje y las herramientas que
+							tenemos.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="contact" id="contacto">
+				<div class="wrapper__content-contact">
+					<h2 class="contact__title">Contacto</h2>
+					<p class="contact__text">Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto.</p>
+					<form action="#" class="form" method="POST">
+						<div class="form__item">
+							<label for="nombre" class="form__item-title">Nombre</label>
+							<input type="text" name="nombre" id="nombre" class="form__item-countryside" placeholder="Nombre completo">
+						</div>
+						<div class="form__item">
+							<label for="email" class="form__item-title">Correo electrónico</label>
+							<input type="email" name="email" id="email" class="form__item-countryside" placeholder="Correo electrónico">
+						</div>
+						<div class="form__item">
+							<label for="mensaje" class="form__item-title">Mensaje</label>
+							<textarea name="mensaje" id="mensaje" class="form__item-countryside" placeholder="Mensaje"></textarea>
+							<input type="submit" value="Enviar mensaje" class="form__button">
+						</div>
+					</form>
+				</div>
+			</section>
 		</main>
 		<footer>
-			<main class="wrapper">
-				<div class="wrapper__content"></div>
-			</main>
+			<div class="footer">
+				<div class="footer__contacts">
+					<h3 class="footer__contact-title">Contacto</h3>
+					<ul class="footer__contact-list">
+						<li class="footer__contact-item">
+							<a href="#" target="_blank" class="footer__contact-link">
+								<img src="src/img/icon-email.svg" alt="icon email">
+								Correo electrónico
+							</a>
+						</li>
+						<li class="footer__contact-item">
+							<a href="#" target="_blank" class="footer__contact-link">
+								<img src="src/img/icon-phone.svg" alt="icon phone">
+								Teléfono
+							</a>
+						</li>
+						<li class="footer__contact-item">
+							<a href="#" target="_blank" class="footer__contact-link">
+								<img src="src/img/icon-instagram.svg" alt="icon instagram">
+								Instagram
+							</a>
+						</li>
+						<li class="footer__contact-item">
+							<a href="#" target="_blank" class="footer__contact-link">
+								<img src="src/img/icon-twitter.svg" alt="icon twitter">
+								Twitter
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__credits">
+					<div class="footer__logo">
+						<img src="src/img/footer__logo-image.svg" alt="logo image">
+					</div>
+					<div class="footer__text">
+						<p>Hecho con
+							<span>
+								<img src="src/img/icon-heart.svg" alt="icon hard">
+							</span>
+							de Edwyn.
+						</p>
+						<p> Copyright 2021 - Todos los derechos reservados.</p>
+					</div>
+				</div>
+			</div>
 		</footer>
 		<script src="src/js/index.js"></script>
 	</body>

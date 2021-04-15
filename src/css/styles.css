@@ -203,7 +203,7 @@ body {
 .projects {
    max-width: 1336px;
    margin: 0 auto;
-   padding: 2.5rem 1rem 0;
+   padding: 2.5rem 1rem 12.5rem;
 }
 
 .projects__title {
@@ -249,8 +249,6 @@ body {
 .project__navbar-link:hover {
    background-color: var(--color-three);
 }
-
-/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .project-niko,
 .project-spotifu,
@@ -359,10 +357,205 @@ body {
    block-size: 724px;
 }
 
-/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
 /* -------- (Projects) -------- */
+
+
+/* -------- Testimonials-------- */
+
+.testimonials {
+   padding: 0 1rem;
+}
+
+.testimonials__title {
+   margin: 0 0 5rem 0;
+   color: var(--color-two);
+   font-family: "Exo";
+   font-size: 2rem;
+   font-weight: 700;
+   text-align: center;
+}
+
+.testimonials__image-agustin,
+.testimonials__image-aritz,
+.testimonials__image-jose,
+.testimonials__image-victoriano {
+   position: absolute;
+   top: -40px;
+   left: -28px;
+   font-size: 0;
+}
+
+.testimonials__users {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.testimonials__agustin,
+.testimonials__aritz,
+.testimonials__jose,
+.testimonials__victoriano {
+   position: relative;
+   max-inline-size: 293px;
+   margin-bottom: 5rem;
+   padding: 4rem 1.5rem;
+   background-color: var(--color-three);
+   color: var(--color-one);
+   box-shadow: 16px 16px 0px var(--color-two);
+}
+
+.testimonials__aritz,
+.testimonials__victoriano {
+   background-color: var(--color-two);
+   color: var(--color-four);
+   box-shadow: 16px 16px 0px var(--color-three);
+}
+
+.testimonials__agustin-title,
+.testimonials__aritz-title,
+.testimonials__jose-title,
+.testimonials__victoriano-title {
+   font-family: "Exo";
+   font-size: 2rem;
+   font-weight: 700;
+   margin: 0;
+}
+
+.testimonials__agustin-text,
+.testimonials__aritz-text,
+.testimonials__jose-text,
+.testimonials__victoriano-text {
+   font-family: "Cantarell";
+   line-height: 1.688rem;
+}
+
+/* -------- (Testimonials) -------- */
+
+
+/* -------- Contact -------- */
+
+.contact {
+   padding: 4rem 1rem;
+   background-color: var(--color-three);
+}
+
+.wrapper__content-contact {
+   max-inline-size: 450px;
+   margin: 0 auto;
+}
+
+.contact__title {
+   margin: 0;
+   color: var(--color-two);
+   font-family: "Exo";
+   font-size: 3rem;
+   text-align: center;
+}
+
+.contact__text {
+   margin: 3rem;
+   font-size: 1.125rem;
+   font-family: "Cantarell";
+   text-align: center;
+}
+
+.form__item-title {
+   display: none;
+}
+
+.form {
+   font-family: "Cantarell";
+}
+
+.form__item-countryside {
+   block-size: 51px;
+   inline-size: 100%;
+   margin-bottom: 1rem;
+   padding: 0.75rem 1rem;
+   border: none;
+}
+
+#mensaje {
+   resize: none;
+   block-size: 181px;
+}
+
+.form__button {
+   display: block;
+   inline-size: 100%;
+   block-size: 48px;
+   color: var(--color-four);
+   background-color: var(--color-two);
+   font-weight: 700;
+   border: none;
+}
+
+::-webkit-input-placeholder {
+   color: var(--color-two);
+}
+
+/* -------- (Contact) -------- */
+
+
+/* -------- Footer-------- */
+
+footer {
+   /*background-color: var(--color-two);*/
+   color: var(--color-four);
+   background-image: url(../img/footer-mob.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.footer {
+   max-inline-size: 1336px;
+   margin: 0 auto;
+   padding: 3rem 1rem;
+}
+
+.footer__contact-title {
+   margin: 0 0 2rem 0;
+   font-family: "Exo";
+   font-size: 1.5rem;
+}
+
+.footer__contact-list {
+   margin: 0;
+   padding: 0 0 5rem 0;
+   list-style: none;
+}
+
+.footer__contact-item {
+   margin-bottom: 2rem;
+}
+
+.footer__contact-link {
+   display: flex;
+   align-items: center;
+   color: var(--color-four);
+   font-family: "Cantarell";
+   text-decoration: none;
+}
+
+.footer__contact-link img {
+   margin-right: 0.5rem;
+}
+
+.footer__credits {
+   font-family: "Cantarell";
+}
+
+.footer__credits p:nth-of-type(1) {
+   display: flex;
+   align-items: center;
+   margin: 1.875rem 0 0.5rem 0;
+}
+
+.footer__credits p:nth-of-type(2) {
+   margin: 0;
+}
+
+/* -------- (Footer) -------- */
 
 
 /* -------- Media -------- */
@@ -374,6 +567,27 @@ body {
    }
 }
 
+@media screen and (min-width: 640px) {
+   /* Testimonials */
+   .testimonials__image-agustin,
+   .testimonials__image-aritz,
+   .testimonials__image-jose,
+   .testimonials__image-victoriano {
+      position: absolute;
+      top: -64px;
+      left: -82px;
+   }
+
+   .testimonials__agustin,
+   .testimonials__aritz,
+   .testimonials__jose,
+   .testimonials__victoriano {
+      max-inline-size: 440px;
+      margin-bottom: 10rem;
+      padding: 4rem 1.5rem 4rem 4.375rem;
+   }
+}
+
 @media screen and (min-width: 736px) {
    /* Hero */
    .hero__me-text {
@@ -382,6 +596,76 @@ body {
 
    .hero__skills .hero__skill:nth-of-type(2) {
       margin-right: 0;
+   }
+}
+
+@media screen and (min-width: 840px) {
+   /* Footer */
+   footer {
+      background-image: url(../img/footer-desktop.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+   .footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 3rem 1rem;
+   }
+
+   .footer__contact-list {
+      padding: 0;
+   }
+
+   .footer__contact-list .footer__contact-item:nth-of-type(4) {
+      margin: 0;
+   }
+
+   .footer__credits p:nth-of-type(1) {
+      margin: 0;
+   }
+
+   .footer__logo {
+      text-align: right;
+   }
+
+   .footer__text {
+      display: flex;
+      align-items: center;
+      margin-top: 1.875rem;
+   }
+}
+
+@media screen and (min-width: 1190px) {
+   /* Testimonials */
+   .testimonials__title {
+      font-size: 6.25rem;
+      margin: 0 0 10rem 0;
+   }
+
+   .testimonials__users {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-inline-size: 1000px;
+      margin: 0 auto;
+   }
+
+   .testimonials__agustin {
+      order: 1;
+   }
+
+   .testimonials__aritz {
+      order: 2;
+   }
+
+   .testimonials__victoriano {
+      order: 3;
+   }
+
+   .testimonials__jose {
+      order: 4;
    }
 }
 
@@ -560,6 +844,10 @@ body {
    .hero__skill {
       margin-bottom: 0;
    }
+
+   .contact {
+      padding: 5rem 0 5rem 0;
+   }
 }
 
 @media screen and (min-width: 1352px) {
@@ -578,6 +866,11 @@ body {
 
    .projects {
       padding: 5rem 0 0 0;
+   }
+
+   /* Footer */
+   .footer {
+      padding: 3rem 0;
    }
 }
 
